@@ -4,7 +4,23 @@
 <head>
  
     <style>
-
+        rememberMe {
+            font-size: 10px
+        }
+        .image1 {
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        transform: translate(-50%,80%);
+        margin-right: 10px;
+        position: absolute;
+        box-sizing: border-box;
+        padding: 40px 40px;
+        text-align: center;
+    }
         body {
             margin: 0;
             padding: 0;
@@ -15,7 +31,7 @@
             width: 320px;
             height: 220px;
             background: #fff;
-            color: #fff;
+            color: #000;
             top: 50%;
             left: 50%;
             transform: translate(10%,-50%);
@@ -60,6 +76,7 @@
             }
             .loginbox input[type="checkbox"] {
                 display: inline-block;
+                color: #000;
                 width: auto;
             }
 
@@ -79,9 +96,6 @@
             color: darkgrey;
         }
     </style>
-    <body>
-        <html>
-        <head>
             <title>Login form</title>
             <body>
                 <div class="loginbox">
@@ -90,45 +104,20 @@
                     <form>
                         <input type="text" name="" placeholder="Email Address*">
                         <input type="password" name="" placeholder="Password*">
-                        <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe">Remember me</label>
+                        <span style='font-size: 15px; color: darkgrey'><input type="checkbox" id="rememberMe" value="IsRememberMe">&nbsp;<label for="rememberMe">Remember Me</label></span>
                         <input type="submit" name="" value="Sign In">
                         <a href="#">Forgot Password?</a>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
                         <a href="#">Don't have an account?Sign Up</a>
                     </form>
+                    <div class="image1">
+                        <img src="books.jpg" style="width:300px;height:200px;" />
+                    </div>
+            
 
 
             </body>
 
-        </head>
-    </html>
-    </body>
-</head>
-
-<style>
-
-
-    .image1 {
-        width: 320px;
-        height: 320px;
-        border-radius: 50%;
-        position: absolute;
-        bottom: 50%;
-        right: 50%;
-        transform: translate(-50%,80%);
-        margin-right: 10px;
-        position: absolute;
-        box-sizing: border-box;
-        padding: 40px 40px;
-        text-align: center;
-    }
-</style>
-<body>
-    
-        <div class="image1">
-            <img src="books.jpg" style="width:300px;height:200px;" />
-        </div>
-
-
-    
-</body>
 </html>
